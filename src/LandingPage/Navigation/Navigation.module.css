@@ -34,9 +34,7 @@ li:hover {
     border-radius: 10px;
     padding: 5px;
     font-size: normal;
-    background: linear-gradient(to right, rgb(255, 238, 238),rgb(187, 219, 240));
+    background:linear-gradient(to right,rgb(187, 219, 240),rgb(255, 238, 238)) ;
+
 }
 
-.active:hover {
-   background:linear-gradient(to right,rgb(187, 219, 240),rgb(255, 238, 238)) ;
-}
