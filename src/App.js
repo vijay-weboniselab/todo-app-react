@@ -6,11 +6,13 @@ import LandingPage from './LandingPage/LandingPage';
 
 function App() {
   return (
-      <BrowserRouter>
-        <div className="App">
+     <div className="App">
+        <BrowserRouter>
+      
           <LandingPage />
-        </div>
+       
       </BrowserRouter>
+     </div>
     );
 }
 
