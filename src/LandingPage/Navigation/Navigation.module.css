@@ -25,16 +25,20 @@ li {
 .active {
     border-radius: 10px;
     padding: 5px;
-    font-size: large;
-    background: linear-gradient(to right, rgb(255, 238, 238),rgb(187, 219, 240));
+    font-size: larger;
+    border-top: lightgreen solid 10px;
+    border-bottom: lightgreen solid 5px;
+    /* background: linear-gradient(to right, rgb(255, 238, 238),rgb(187, 219, 240)); */
     transition: font-size 400ms;
+    color: blue;
 }
 
 li:hover {
     border-radius: 10px;
     padding: 5px;
-    font-size: normal;
-    background:linear-gradient(to right,rgb(187, 219, 240),rgb(255, 238, 238)) ;
-
+    font-size: large;
+    /* background:linear-gradient(to right,rgb(187, 219, 240),rgb(255, 238, 238)) ; */
+    transition: font-size 400ms;
+    color: green !important;
 }
 
