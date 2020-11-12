@@ -9,8 +9,8 @@ function Navigation(props) {
             <nav >
                 <li><NavLink activeClassName={classes.active} to="/home">Home</NavLink></li>
                 <li><NavLink activeClassName={classes.active} to="/tasks">Tasks</NavLink></li>
-                <li><NavLink activeClassName={classes.active} to="/about">About</NavLink></li>
                 <li><NavLink activeClassName={classes.active} to="/charts">Charts</NavLink></li>
+                <li><NavLink activeClassName={classes.active} to="/about">About</NavLink></li>
             </nav>
         </Fragment>
     )

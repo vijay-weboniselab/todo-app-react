@@ -19,14 +19,3 @@ export default function TaskItem(props) {
     </div>
   );
 }
-/* 
-              <input
-                type="checkbox"
-                name="status"
-                id="status"
-                checked={props.todo.completed}
-                onChange={event => props.valueChange(event.target.checked,props.todo)}
-              />
-<span className="id">{props.todo.id}</span>
-<p className="task">{props.todo.task}</p>
-<span className="date">{props.todo.date}</span> */
