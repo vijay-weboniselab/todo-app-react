@@ -5,5 +5,6 @@ export default function About() {
         <div>
             <h3>some about information</h3>
         </div>
-    )
+
+)
 }

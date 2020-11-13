@@ -9,10 +9,6 @@
     margin-bottom: 10px;
     width: 20vw;
     height: 95vh;
-    background-image: linear-gradie render={()=>{ <h1>this is props.match.url</h1>}}
-    render={()=>{ <h1>this is props.match.url</h1>}}
-    list-style-type: none; render={()=>{ <h1>this is props.match.url</h1>}}
-    render={()=>{ <h1>this is props.match.url</h1>}}
     background-color: yellow;   
     
 }

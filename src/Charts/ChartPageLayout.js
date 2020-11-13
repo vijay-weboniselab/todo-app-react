@@ -20,22 +20,22 @@ const ChartPageLayout = (props) => {
             <NavLink activeClassName={classes.active} className={classes.listItem} to={props.match.url + ""} exact>
               barchart
             </NavLink>
-            <NavLink activeClassName={classes.active} className={classes.listItem} to={props.match.url + "linechart"} exact>
+            <NavLink activeClassName={classes.active} className={classes.listItem} to={props.match.url + "/linechart"} exact>
               linechart
             </NavLink>
-            <NavLink activeClassName={classes.active} className={classes.listItem} to={props.match.url + "histogram"} exact>
+            <NavLink activeClassName={classes.active} className={classes.listItem} to={props.match.url + "/histogram"} exact>
               histogram
             </NavLink>
-            <NavLink activeClassName={classes.active} className={classes.listItem} to={props.match.url + "piechart"} exact>
+            <NavLink activeClassName={classes.active} className={classes.listItem} to={props.match.url + "/piechart"} exact>
               piechart
             </NavLink>
         </div>
         <div className={classes.chatContainer}>
           <Switch>
             <Route path={props.match.url + "" }exact component={BarChart} />
-            <Route path={props.match.url + "linechart"} component={LineChart}/>
-            <Route path={props.match.url + "histogram"} component={Histogram}/>
-            <Route path={props.match.url + "piechart" } component={PieChart} />
+            <Route path={props.match.url + "/linechart"} component={LineChart}/>
+            <Route path={props.match.url + "/histogram"} component={Histogram}/>
+            <Route path={props.match.url + "/piechart" } component={PieChart} />
           </Switch>
         </div>
       </div>

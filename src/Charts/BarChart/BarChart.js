@@ -2,12 +2,11 @@ import React, { Fragment,useEffect,useRef, useState } from 'react';
 import classes from './BarChart.module.css';
 import { select } from 'd3'
 const BarChart = (props) => {
+   
     const svgRef = useRef();
     const [data, setData] = useState([10,20,30,40,50,60,70,80])
     useEffect(() => {
         const svg = select(svgRef.current);
-        console.log(svg);
-        console.log(props)
         svg
             .selectAll("circle")
             .data(data)

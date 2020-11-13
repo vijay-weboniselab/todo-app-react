@@ -11,6 +11,7 @@ function Navigation(props) {
                 <li><NavLink activeClassName={classes.active} to="/tasks">Tasks</NavLink></li>
                 <li><NavLink activeClassName={classes.active} to="/charts">Charts</NavLink></li>
                 <li><NavLink activeClassName={classes.active} to="/about">About</NavLink></li>
+                <li><NavLink activeClassName={classes.active} to="/httppractice">Http Practice</NavLink></li>
             </nav>
         </Fragment>
     )

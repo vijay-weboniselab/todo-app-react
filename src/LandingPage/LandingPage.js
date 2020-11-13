@@ -6,6 +6,7 @@ import TaskPageLayout from "../TasksPage/TaskPageLayout";
 import Navigation from "./Navigation/Navigation";
 import "./LandingPage.module.css"
 import ChartPageLayout from "../Charts/ChartPageLayout";
+import HttpPracticeLayout from "../HttpPractice/HttpPracticeLayout";
 
 export default function LandingPage() {
   return (
@@ -18,6 +19,7 @@ export default function LandingPage() {
           <Route path="/tasks" component={TaskPageLayout} />
           <Route path="/task:id" component={TaskDetails} />
           <Route path="/about" component={About} />
+          <Route path="/httppractice" component={HttpPracticeLayout} />
         </Switch>
       </section>
     </Fragment>
