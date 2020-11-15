@@ -1,0 +1,11 @@
+
+### getting 5 users
+GET https://dummyapi.io/data/api/user?limit=5 HTTP/1.1
+Content-Length: application/json
+app-id: 5faeac89ea925565ef6a1ad5
+
+#### get 100 records
+GET https://dummyapi.io/data/api/user?limit=100 HTTP/1.1
+Content-Length: application/json
+app-id: 5faeac89ea925565ef6a1ad5
+

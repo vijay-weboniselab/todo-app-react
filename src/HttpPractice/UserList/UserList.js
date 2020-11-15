@@ -5,10 +5,10 @@ import UserProfile from "../UserProfile/UserProfile";
 
 export default function UserList(props) {
   let [state, setUserlist] = useState({ userList: [] });
-  let [selectedUser, setSelectedUser] = useState({})
+  let [selectedUser, setSelectedUser] = useState({});
   useEffect(() => {
     axios
-      .get("https://dummyapi.io/data/api/user?limit=100", {
+      .get("https://dummyapi.io/data/api/user?limit=15  ", {
         headers: {
           "app-id": "5faeac89ea925565ef6a1ad5",
         },
@@ -19,27 +19,30 @@ export default function UserList(props) {
   }, []);
 
   //onUserSelect
-  let onUserSelect = (value) =>{
-    setSelectedUser({...value});
-    console.log(selectedUser)
-  }
+  let onUserSelect = (value) => {
+    setSelectedUser({ ...value });
+    console.log(selectedUser);
+  };
 
-  let users =  state.userList.map((user) => {
+  let users = state.userList.map((user) => {
     return <User key={user.id} onUserSelect={onUserSelect} {...user} />;
   });
-  return <div style ={{
-      display: "flex"
-  }}>
-     <div>
-         {users ? users : <h3>Loading...</h3>}
-     </div>
-     <div style={{
-         position: "fixed",
-         right : "10px"
-     }}>
+  return (
+    <div
+      style={{
+        display: "flex",
+      }}
+    >
+      <div>{users ? users : <h3>Loading...</h3>}</div>
+      <div
+        style={{
+          position: "fixed",
+          right: "10px",
+        }}
+      >
         <h3>user Profile</h3>
-        {selectedUser.selectedUser?   <UserProfile user={selectedUser}/> : null}
-     </div>
-  </div>
-
+        {selectedUser.selectedUser ? <UserProfile user={selectedUser} /> : null}
+      </div>
+    </div>
+  );
 }

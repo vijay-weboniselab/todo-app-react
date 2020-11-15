@@ -14,7 +14,6 @@ export default function TaskList() {
         t.completed = status;
       }
     });
-
     dispatch({ type: "UPDATE", payload: updatedTodos });
   };
 
